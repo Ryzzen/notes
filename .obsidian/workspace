@@ -1,0 +1,142 @@
+{
+  "main": {
+    "id": "0d2d5caa1ea2cf2b",
+    "type": "split",
+    "children": [
+      {
+        "id": "bc7a815d908a5404",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Pwn/Vtables.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6ad49b994c86e39d",
+    "type": "split",
+    "children": [
+      {
+        "id": "d4261974c02ab4f0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "77972c6a65804cb5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "539aecbaf5c512a9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#Ressource",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "32f6ec383cdd519b",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 373.5
+  },
+  "right": {
+    "id": "0522898e5f86dfab",
+    "type": "split",
+    "children": [
+      {
+        "id": "444df045c9c6d2af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5b65c8097aba3125",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Pwn/Vtables.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2b48ffd5bd70fd8e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Pwn/Vtables.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cb2bf4cd871b7ea7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6e5b2b28edc7b6ed",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Pwn/Vtables.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "bc7a815d908a5404",
+  "lastOpenFiles": [
+    "Pwn/Kernel/Source code.md",
+    "Pwn/Vtables.md",
+    "Pwn/Kernel/General.md",
+    "ESNA/UTC503/Note_cours_1.md",
+    "ESNA/Projets 2 ans.md",
+    "ESNA/TET102/Note Amphi 1 080922.md",
+    "2022-08-04.md",
+    "Pwn/Kernel.md"
+  ]
+}

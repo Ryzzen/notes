@@ -1,0 +1,250 @@
+{
+  "main": {
+    "id": "3c4f276a9aed59e8",
+    "type": "split",
+    "children": [
+      {
+        "id": "133b579277317ae2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0faa2ef6db8efda5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Format string.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9b3e794f4b3fc5b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kernel/General.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b1cf90141ee4120c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Shellcode.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ab83fa64cc362f29",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kernel/General.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "35600decbbe4b73b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kernel/ROP - SMEP Bypass.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fd8ea79f975970f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Common.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c6bc6aefcf089dbb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MALLOC DES-MALEFICARUM.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "350257a21557b3fd",
+    "type": "split",
+    "children": [
+      {
+        "id": "9213144002cd4d8e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c0e2a7907ce3ce1b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0aa9049789daf84c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6a904ed1d587815a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5ed7d24a309db467",
+    "type": "split",
+    "children": [
+      {
+        "id": "6734fb213d462fb5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "03806ef47cfea7de",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "MALLOC DES-MALEFICARUM.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1edf0ac237b891d3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "MALLOC DES-MALEFICARUM.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4020b21e8580b3c3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "cf34d1b38503d1fb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "MALLOC DES-MALEFICARUM.md"
+              }
+            }
+          },
+          {
+            "id": "2a43e28674b6becb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c6bc6aefcf089dbb",
+  "lastOpenFiles": [
+    "Common.md",
+    "MALLOC DES-MALEFICARUM.md",
+    "Kernel/General.md",
+    "Kernel/ROP - SMEP Bypass.md",
+    "Kernel/Basic expoit.md",
+    "Kernel/Source code.md",
+    "Tools/Shellcode.md",
+    "Format string.md",
+    "Vtables.md",
+    "SROP.md",
+    "Dlresolve.md",
+    "Tools/Wrapper C setreuid.md",
+    "Tools/z3.md",
+    "Tools/Hooking linux.md",
+    "Tools/Angr.md"
+  ]
+}
