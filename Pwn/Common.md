@@ -17,7 +17,7 @@ pwn template > explt.py
 Patchelf
 ```bash
 patchelf --replace-needed liboriginal.so.1 $PWD/libreplacement.so.1 my-program
-patchelf --set-interpreter $PWD/my-ld-linux.so.2 my-program
+-
 ```
 
 One_gadget

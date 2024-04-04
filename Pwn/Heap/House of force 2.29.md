@@ -16,6 +16,7 @@ malloc(24, "winwin")
 
 ## Mitigation
 
-- Works until glibc version 2.29. After that, glibc ensures that the top chunk
-size does not exceed its arena’s system_mem value.
-- Wrap around to VA space only works until 2.30, glibc introduced a maximum allocation size check, which limits the size of the gap the House of Force can bridge.
+|GLIBC VERSION|PATCHES|
+|---|---|
+|2.29|glibc ensures that the top chunk size does not exceed its arena’s system_mem value.|
+|2.30|Wrap around to VA space, glibc introduced a maximum allocation size check, which limits the size of the gap the House of Force can bridge.|

