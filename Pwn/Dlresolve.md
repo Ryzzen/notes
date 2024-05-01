@@ -1,6 +1,6 @@
 # Pwntools
 ```python
-offset = 28
+offset = 69
 
 rop = ROP(context.binary)
 

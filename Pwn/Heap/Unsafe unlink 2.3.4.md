@@ -15,10 +15,10 @@ bk being at offset 0x18 and fd at offset 0x10 in the chunk structure.
 The primitive looks like this in gdb:
 
 **rax = fd**
-![rax](./media/rax.png)
+![rax](rax.png)
 
 **rdx = bk**
-![rdx](./media/rdx.png)
+![rdx](rdx.png)
 
 
 ### Exploit example

